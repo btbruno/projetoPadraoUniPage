@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto Padrão</title>
+</head>
+
+<body>
+    <header class="flex">
+        <a href="" class="logo"><img src="" alt="">Logo</a>
+        <nav>
+            <ul class="flex">
+                <li><a class="active" href="#home"  onclick="toggle()">Home</a></li>
+                <li><a href="#about"  onclick="toggle()">About</a></li>
+                <li><a href="#section"  onclick="toggle()">Section</a></li>
+                <li><a href=""  onclick="toggle()">Developer</a></li>
+                <li><a href=""  onclick="toggle()">Galery</a></li>
+                <li><a href=""  onclick="toggle()">Contatc</a></li>
+            </ul>
+        </nav>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <main>
+        <section id="home" class="flex">
+            <div>
+                <h2>RESPONSIVE WEBSITE DESIGN FOR BEGINNERS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod blanditiis odio doloremque maiores impedit! Ut accusantium laborum accusamus, impedit odio incidunt placeat voluptas dolorem praesentium eligendi ullam! Quae, cumque aliquid!</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <img src="/img/india.jpg" alt="">
+        </section>
+        
+        <section id="about" class="flex">
+            <img src="/img/india.jpg" class="image" alt="">
+            <div>
+                <h2>RESPONSIVE WEBSITE DESIGN FOR BEGINNERS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod blanditiis odio doloremque maiores impedit! Ut accusantium laborum accusamus, impedit odio incidunt placeat voluptas dolorem praesentium eligendi ullam! Quae, cumque aliquid!</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            
+        </section>
+        <section id="section" class="flex">
+            <div>
+                <h2>RESPONSIVE WEBSITE DESIGN FOR BEGINNERS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod blanditiis odio doloremque maiores impedit! Ut accusantium laborum accusamus, impedit odio incidunt placeat voluptas dolorem praesentium eligendi ullam! Quae, cumque aliquid!</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <img src="/img/india.jpg" alt="">
+        </section>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" >
+        function toggle(){
+            var header = document.querySelector("header")
+            header.classList.toggle('active')
+        }
+    </script>
+</body>
+
+
+</html>
