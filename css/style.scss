@@ -49,8 +49,21 @@ header{
     padding: 0 50px;
     background: #111;
     z-index: 1000;
+    
+
+    &:nth-child(odd){
+        
+        
+        box-shadow: 0 0px 20px rgb(36, 36, 36);
+    }
+    &:nth-child(even){
+        
+        box-shadow: 0 1px 20px #111;
+        
+    }
 
     nav{
+        
         ul{
             position: relative;
             li{
@@ -106,6 +119,7 @@ main{
             align-items: center;
             background: #111;
             color: white;
+            box-shadow: 0 1px 20px #111;
         }
         
         div{
