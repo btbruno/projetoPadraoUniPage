@@ -42,6 +42,7 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+
 header{
     position: fixed;
     width: 100vw;
@@ -149,6 +150,87 @@ main{
         }
 
     }
+}
+footer{
+    padding: 10px 50px 0 50px;
+    background: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    
+        
+
+    div{
+        // height:300px;
+        width: 300px;
+        padding: 10px;
+        
+        
+        .more{
+            text-align: center;
+            // border: 1px solid #fff;
+            display: block;
+            margin: 10px;
+
+            &:hover{
+                color: red;
+                transition: 0.5s;
+                
+            }
+        }
+        h2{
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-align: center;
+            
+        }
+        ul{
+                    
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+
+                a{
+
+                    &:hover{
+                        color: red!important;
+                        transition: 0.5s;
+
+                    }
+                }
+
+            }
+        }
+
+        .social{
+                    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                margin-right:10px ;
+                width: 30px;
+                height: 30px;
+                // border: 1px solid #fff;
+                
+                
+                a{
+                    &:hover{
+                        color: red;
+                        transition: 0.5s;
+
+                    }
+                }
+            }
+        }   
+
+    }
+    
 }
 
 @media(max-width:992px){
@@ -272,5 +354,78 @@ main{
         .active .toggle::after{
             bottom: 14px;
             transform: rotate(-45deg);
+        }
+
+        footer{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            
+        
+
+            div{
+                width: 100vw;
+                padding: 20px 50px 20px 50px;
+
+                .more{
+                    text-align: center;
+                    // border: 1px solid #fff;
+                    display: block;
+
+                    &:hover{
+                        color: red;
+                        transition: 0.5s;
+                        margin-top: 10px;
+                    }
+                    
+                }
+        
+
+                h2{
+                    
+                    
+                    width: 100%;
+                    text-align: center;
+                }
+                
+                ul{
+                    
+                    li{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        a{
+
+                            &:hover{
+                                color: red!important;
+                                transition: 0.5s;
+    
+                            }
+                        }
+
+                    }
+                }
+
+                .social{
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    li{
+                        margin-right:10px ;
+                        
+
+                        a{
+
+                        }
+                    }
+                }
+                
+            }
         }
 }
